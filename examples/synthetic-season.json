@@ -1,0 +1,292 @@
+{
+  "schema_version": 1,
+  "coverage": {
+    "label": "SYNTHETIC TEST — NOT REAL RACES",
+    "start_season": 2024,
+    "end_season": 2024,
+    "expected_event_ids": [
+      "2024-01-gp",
+      "2024-02-gp",
+      "2024-03-gp",
+      "2024-04-gp"
+    ]
+  },
+  "events": [
+    {
+      "event_id": "2024-01-gp",
+      "season": 2024,
+      "round": 1,
+      "session": "gp",
+      "name": "SYNTHETIC TEST GP 1",
+      "date": "2024-03-07",
+      "completed": true,
+      "official_status": "unknown",
+      "verification": "provisional",
+      "pending_reviews": [
+        "Synthetic test data"
+      ],
+      "sources": [
+        {
+          "url": "https://example.org/synthetic/gp/1",
+          "title": "Synthetic fixture — not real race evidence",
+          "publisher": "Test only",
+          "role": "secondary",
+          "retrieved_at": "2024-04-01T00:00:00Z"
+        }
+      ],
+      "results": [
+        {
+          "driver_id": "a",
+          "constructor_id": "red",
+          "date_of_birth": "1990-01-01",
+          "position": 1,
+          "grid": 4,
+          "points": "25",
+          "started": true,
+          "disqualified": false,
+          "finished": true
+        },
+        {
+          "driver_id": "b",
+          "constructor_id": "red",
+          "date_of_birth": "1995-01-01",
+          "position": 2,
+          "grid": 3,
+          "points": "18",
+          "started": true,
+          "disqualified": false,
+          "finished": true
+        },
+        {
+          "driver_id": "c",
+          "constructor_id": "blue",
+          "date_of_birth": "1985-01-01",
+          "position": 3,
+          "grid": 2,
+          "points": "15",
+          "started": true,
+          "disqualified": false,
+          "finished": true
+        },
+        {
+          "driver_id": "d",
+          "constructor_id": "blue",
+          "date_of_birth": "2000-01-01",
+          "position": 4,
+          "grid": 1,
+          "points": "0",
+          "started": true,
+          "disqualified": false,
+          "finished": true
+        }
+      ]
+    },
+    {
+      "event_id": "2024-02-gp",
+      "season": 2024,
+      "round": 2,
+      "session": "gp",
+      "name": "SYNTHETIC TEST GP 2",
+      "date": "2024-03-14",
+      "completed": true,
+      "official_status": "unknown",
+      "verification": "provisional",
+      "pending_reviews": [
+        "Synthetic test data"
+      ],
+      "sources": [
+        {
+          "url": "https://example.org/synthetic/gp/2",
+          "title": "Synthetic fixture — not real race evidence",
+          "publisher": "Test only",
+          "role": "secondary",
+          "retrieved_at": "2024-04-01T00:00:00Z"
+        }
+      ],
+      "results": [
+        {
+          "driver_id": "a",
+          "constructor_id": "red",
+          "date_of_birth": "1990-01-01",
+          "position": 1,
+          "grid": 4,
+          "points": "25",
+          "started": true,
+          "disqualified": false,
+          "finished": true
+        },
+        {
+          "driver_id": "b",
+          "constructor_id": "red",
+          "date_of_birth": "1995-01-01",
+          "position": 2,
+          "grid": 3,
+          "points": "18",
+          "started": true,
+          "disqualified": false,
+          "finished": true
+        },
+        {
+          "driver_id": "c",
+          "constructor_id": "blue",
+          "date_of_birth": "1985-01-01",
+          "position": 3,
+          "grid": 2,
+          "points": "15",
+          "started": true,
+          "disqualified": false,
+          "finished": true
+        },
+        {
+          "driver_id": "d",
+          "constructor_id": "blue",
+          "date_of_birth": "2000-01-01",
+          "position": 4,
+          "grid": 1,
+          "points": "0",
+          "started": true,
+          "disqualified": false,
+          "finished": true
+        }
+      ]
+    },
+    {
+      "event_id": "2024-03-gp",
+      "season": 2024,
+      "round": 3,
+      "session": "gp",
+      "name": "SYNTHETIC TEST GP 3",
+      "date": "2024-03-21",
+      "completed": true,
+      "official_status": "unknown",
+      "verification": "provisional",
+      "pending_reviews": [
+        "Synthetic test data"
+      ],
+      "sources": [
+        {
+          "url": "https://example.org/synthetic/gp/3",
+          "title": "Synthetic fixture — not real race evidence",
+          "publisher": "Test only",
+          "role": "secondary",
+          "retrieved_at": "2024-04-01T00:00:00Z"
+        }
+      ],
+      "results": [
+        {
+          "driver_id": "b",
+          "constructor_id": "red",
+          "date_of_birth": "1995-01-01",
+          "position": 1,
+          "grid": 3,
+          "points": "25",
+          "started": true,
+          "disqualified": false,
+          "finished": true
+        },
+        {
+          "driver_id": "a",
+          "constructor_id": "red",
+          "date_of_birth": "1990-01-01",
+          "position": 2,
+          "grid": 4,
+          "points": "18",
+          "started": true,
+          "disqualified": false,
+          "finished": true
+        },
+        {
+          "driver_id": "c",
+          "constructor_id": "blue",
+          "date_of_birth": "1985-01-01",
+          "position": 3,
+          "grid": 2,
+          "points": "15",
+          "started": true,
+          "disqualified": false,
+          "finished": true
+        },
+        {
+          "driver_id": "d",
+          "constructor_id": "blue",
+          "date_of_birth": "2000-01-01",
+          "position": 4,
+          "grid": 1,
+          "points": "0",
+          "started": true,
+          "disqualified": false,
+          "finished": true
+        }
+      ]
+    },
+    {
+      "event_id": "2024-04-gp",
+      "season": 2024,
+      "round": 4,
+      "session": "gp",
+      "name": "SYNTHETIC TEST GP 4",
+      "date": "2024-03-28",
+      "completed": true,
+      "official_status": "unknown",
+      "verification": "provisional",
+      "pending_reviews": [
+        "Synthetic test data"
+      ],
+      "sources": [
+        {
+          "url": "https://example.org/synthetic/gp/4",
+          "title": "Synthetic fixture — not real race evidence",
+          "publisher": "Test only",
+          "role": "secondary",
+          "retrieved_at": "2024-04-01T00:00:00Z"
+        }
+      ],
+      "results": [
+        {
+          "driver_id": "a",
+          "constructor_id": "red",
+          "date_of_birth": "1990-01-01",
+          "position": 1,
+          "grid": 4,
+          "points": "25",
+          "started": true,
+          "disqualified": false,
+          "finished": true
+        },
+        {
+          "driver_id": "b",
+          "constructor_id": "red",
+          "date_of_birth": "1995-01-01",
+          "position": 2,
+          "grid": 3,
+          "points": "18",
+          "started": true,
+          "disqualified": false,
+          "finished": true
+        },
+        {
+          "driver_id": "c",
+          "constructor_id": "blue",
+          "date_of_birth": "1985-01-01",
+          "position": 3,
+          "grid": 2,
+          "points": "15",
+          "started": true,
+          "disqualified": false,
+          "finished": true
+        },
+        {
+          "driver_id": "d",
+          "constructor_id": "blue",
+          "date_of_birth": "2000-01-01",
+          "position": 4,
+          "grid": 1,
+          "points": "0",
+          "started": true,
+          "disqualified": false,
+          "finished": true
+        }
+      ]
+    }
+  ]
+}

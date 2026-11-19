@@ -26,3 +26,11 @@ Treat unsettled penalties, appeals and revisions as **provisional**, even when a
 Do not notify on routine no-new-GP runs. A material correction to an earlier report may produce a clearly labeled correction notice. A source-access failure must not be reported as “no new race”; expose it through the host's error/status channel, or a brief failure response if none exists. Save reports and state locally; external distribution requires host/user authorization.
 
 The skill runs only when invoked. Recurring execution and quiet notification delivery require a host scheduler. Never claim background monitoring has been enabled merely by installing this skill.
+
+## Optional deterministic tracker / 可选计算程序
+
+For v0.2 evidence review and per-claim status, read [verification.md](references/verification.md). Persist reviews independently of imported observations; only confirm facts after checking their sources, scope and open proceedings. Automatic source agreement is `matched`, not appeal clearance. Reports can contain mixed claim statuses.
+
+When the full repository and Python 3.10+ on Linux/macOS are available, read [runtime.md](references/runtime.md) to use `python3 -m f1tracker` from the repository root. The tracker implements 20 bounded GP metrics, revisioned SQLite persistence and local report exports. The portable Markdown skill remains usable without it.
+
+Treat computed reports as evidence candidates. Live Jolpica imports are provisional secondary evidence; inspect sources and unresolved decisions before any official confirmation. Never change `provisional` to `confirmed` merely because computation succeeded. The executable's fixed scope is narrower than this skill: it does not implement Sprint, qualifying, fastest-lap statistics, arbitrary discovery, automated FIA review or a notification sender. Keep these gaps explicit in responses and reports.

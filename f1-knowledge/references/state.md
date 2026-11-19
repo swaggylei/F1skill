@@ -2,6 +2,8 @@
 
 Keep runtime data outside the installed skill. Use UTF-8 JSON and Markdown, UTC ISO-8601 timestamps and stable IDs; no API keys in state. Migrate the whole data folder across hosts. Git-ignore personal runtime data by default.
 
+The optional Python v0.1 tracker uses `tracker.sqlite3` as its transactional source of truth, with revisioned JSON/Markdown exports. Its database is separate from the manual workflow's suggested `state.json`; it never silently imports or resets an existing manual state file. See [runtime.md](runtime.md) for backup, export recovery and scope limitations. When switching from an existing manual workflow, reconcile previously delivered reports before forwarding tracker outbox entries.
+
 Suggested layout:
 
 ```text

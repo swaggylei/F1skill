@@ -21,4 +21,4 @@ Use a temporary data directory and mocked dated official documents. Do not publi
 | Renamed constructor | Explicit identity scope; no silent lineage merge. |
 | English/bilingual request | Equivalent evidence and definitions in requested language. |
 
-These are review fixtures, not claims of automated end-to-end testing.
+The Python tracker now has executable synthetic tests in `test_tracker.py` for supported GP computation, source validation and persistence behavior. The wider agent workflow, live official-document review, external delivery and real historical accuracy still require manual/live acceptance; passing unit tests does not establish those capabilities.

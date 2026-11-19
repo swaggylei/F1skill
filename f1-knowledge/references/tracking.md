@@ -1,5 +1,7 @@
 # Tracking workflow / 赛后追踪流程
 
+For deterministic v0.1 execution, use [runtime.md](runtime.md). That implementation supports a documented subset of GP-only discovery families below; keep wider agent research and official evidence review explicit.
+
 1. Resolve a writable data directory (`F1_KNOWLEDGE_DATA_DIR` if configured, otherwise `./f1-knowledge-data`). Read state and previous reports. Capture UTC run start and user display timezone. Prevent concurrent writers with a host lock; if unavailable, stop overlapping updates.
 2. On first run, initialize an explicitly dated baseline and process the most recently completed GP weekend. Do not label all historical facts as new. Older catch-up requires an explicit start date. Record the earliest covered event and historical data coverage. An empty baseline cannot establish a before-value without historical evidence.
 3. Discover actual completed GPs from official results and calendar, across season boundaries. Compare stable event IDs and processed revisions, not only a timestamp. Recheck unresolved events and unfinished backlog even if last run was recent. A postponed/cancelled event is not a completed GP. A completed Sprint alone does not trigger the weekend report; include it when that weekend's GP has ended. A cancelled GP may be logged as an exceptional event but must not count as a GP start/result.
