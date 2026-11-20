@@ -4,6 +4,26 @@
 
 A portable, evidence-led Formula 1 skill for history, drivers, constructors and unusual post-race records. Chinese and English supported; race reports default to Chinese with English proper names.
 
+## Pitwall 网页 / Web record book
+
+在[冷门纪录馆](pitwall/dist/almanac.html)可以搜「生日」「首圈」「队友」或车手英文名。每种口径列出原榜前十行以内的实例、原文统计定义、覆盖说明（如有）和完整榜单链接。能精确定位的单场表现同时出现在逐站时间线。Formula 1 官方文章整理的分站故事附原文链接，生涯总数按快照截止日展示。
+
+榜单快照截至 2026-11-08，选自 [TracingInsights 开放统计](https://tracinginsights.com/stats/data)，底层为 [F1DB v2026.20.0](https://github.com/f1db/f1db/releases/tag/v2026.20.0)，以 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 署名。选题及译名在 `pitwall/record-topics.tsv`。在仓库根目录用 `python pitwall/import_almanac.py records.zip f1db-csv.zip` 重建本版。程序核对两个发布包的 SHA-256；引入新版时需先审阅原榜口径、覆盖日期与校验值。榜单更新与下文历史赛果同步独立。
+
+从 [逐站冷门纪录](pitwall/dist/timeline.html) 按赛季与时间顺序浏览，也可以直接追踪 Stroll 的 Q1 淘汰序列或 Leclerc 的正赛 P4 次数。时间线区分累计次数、连续场数和序列终结。Q1 使用 F1DB 的大奖赛排位分段数据，覆盖 2017–2026 年可判定的常规淘汰制场次。缺失或无法判定的场次中断可核验序列。运行下方历史档案更新脚本时，会一并更新分段数据。
+
+从首页「历史档案」进入 [世界锦标赛正赛档案](pitwall/dist/archive.html)，可离线查阅自 1950 年起各站赛果及本站开赛前的车手胜场、登台场次。数据由 [F1DB](https://github.com/f1db/f1db) 提供，按 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 署名使用。本站从发布包选取、重排字段并计算累计次数。页面标明数据版本和已收录的最后一场比赛。
+
+要同步历史档案，在仓库根目录运行 `python pitwall/history.py`。程序获取最新稳定版、核对 SHA-256，再替换离线数据。更新后重新发布 `pitwall/dist/` 即可。网页只纳入已有正赛成绩的世界锦标赛分站。
+
+The full GP archive includes shared drives and preserves missing data. The separate two-race replay below demonstrates the evidence-review workflow.
+
+历史档案的「围场冷知识」可以切换本站发现、赛前可追和截至本站的历届发现。发车位第十或更后夺冠、两胜相隔至少 365 天、三连胜及以上的终结、领奖台组合重聚等条目由正赛数据生成。展开条目可回看依据分站。更新 F1DB 快照后会自动重新计算。
+
+下载仓库后，在浏览器打开 [Pitwall 首页](pitwall/dist/index.html)。默认以 2024 沙特站赛前为视角，展示巴林站后的已知数据。切到赛后可查看三项看点是否达成，并按车手、车队、纪录主题或类别检索。截至所选站的来源和统计范围可以展开查阅。支持中英文切换与离线阅读。
+
+The bundled replay covers Bahrain and Saudi Arabia 2024. To update the website after a tracker sync, run `python pitwall/build.py path/to/tracker.sqlite3` from the repository root, then serve or publish the whole `pitwall/dist/` folder. A normalized JSON snapshot is also accepted. Running the command without a path rebuilds the two-race demo. Web results are provisional observations. The site reads a local snapshot on page load.
+
 ## 使用 / Usage
 
 将 [`f1-knowledge/`](f1-knowledge/SKILL.md) 整个目录复制到支持 Markdown Skill 的平台技能目录。若平台没有 Skill 发现机制，把 SKILL.md 作为任务指令加载，并让它能够读取 references。无需专有插件或第三方 Python 依赖；追踪需要联网检索和可持久化的文件目录。
